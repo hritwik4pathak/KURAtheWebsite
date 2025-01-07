@@ -1,0 +1,895 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    width: 100%;
+    min-height: 152vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/about\ us.webp);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+nav{
+    display: flex;
+    padding: 2% ,6%;
+    justify-content: space-between ;
+   align-items: center;
+    
+}
+.nav img {
+    width: 150px;
+    padding-top: 10px;
+}
+
+
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+    
+}
+.nav-links ul li{
+    list-style:  none;
+    display: inline-block;
+    padding: 30px,12px;
+    position: relative;
+    padding-top: 30px;
+    padding-inline: 10px;
+    padding-right: 50px;
+}
+
+.nav-links ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 13px;
+    font-family: Arial;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: orangered;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover:after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+}
+.text-box h1{
+    font-size: 64px;
+}
+.text-box p{
+    margin: 10px,0,40px;
+    font-size: 30px;
+    color: white;
+    margin-bottom: 5px;
+}
+.ABOUT h2{
+    font-size: 34px;
+    margin-top: 15px;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px ;
+    font-size: 15px;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid  orangered;
+    background: orangered;
+    transition: 1s;
+}
+nav .fa{
+    display: none;
+}
+
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: fixed;
+        background: orangered;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+
+}
+/*------------------------------------steps----------------------*/
+.working h1{
+    margin-top: 130PX;
+    margin-bottom: 20px;
+    font-size: 80PX;
+    text-align: center;
+  }
+/* Container for the steps */
+.steps-container {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Styling each step box */
+  .step {
+    background-color: #cbcb98; /* Green background for steps */
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    margin: 0 10px; /* Space between steps */
+    border-radius: 8px;
+    text-align: center;
+    width: 300px; /* Fixed width for each step */
+    height: 250px;
+    position: relative;
+    margin-top: 5px;
+  }
+  
+  /* Step number styling */
+  .step-number {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .step-description h1{
+    font-size: 30px;
+    margin-top: 75px;
+    margin-bottom: 3px;
+    text-align: center;
+    
+  }
+  
+  /* Step description styling */
+  .step-description h2 {
+
+    font-size: 22px;
+    margin-top: 7px;
+    text-align: center;
+    
+  }
+  
+  /* Arrow between steps */
+  .arrow {
+    font-size: 30px;
+    color: #333; /* Dark arrow color */
+    margin: 0 10px;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .steps-container {
+      flex-direction: column; /* Vertical layout on smaller screens */
+    }
+  
+    .arrow {
+      transform: rotate(90deg); /* Rotate arrows to point downwards */
+      margin: 10px 0;
+    }
+  }
+
+
+
+/*----------------------------about us--------------------*/
+.ABOUT {
+    width: 100%;
+   
+    margin: auto;
+    text-align: center;
+    padding-top: 100PX;
+
+}
+h1{
+    font-size:60px;
+    font-weight: 600;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+h4{
+    font-size: 120px;
+    text-align: left;
+    margin-left: 5%;
+}
+p{
+    color:rgb(188, 30, 30) ;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    
+}
+.row{
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.service-col{
+    flex-basis: 33%;
+    background:#cbcb98;
+    border-radius: 10PX;
+    margin-bottom: 1%;
+    padding: 20PX 12PX;
+    box-sizing: border-box;
+    transition: 0.5s;
+    margin-top: 2%;
+    
+}
+.service-col p{
+    color: #fff;
+}
+h3{
+    text-align: center;
+    font-weight:600 ;
+    margin: 10px 0 ;
+}
+.service-col:hover{
+    box-shadow: 0 0 20px 0px  rgba(0, 0, 0, 0.8);
+}
+.footer{
+    margin-top: 1%;
+}
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+/*--------------------------------FACILITIES-------------------*/
+.FACILITIES{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.FACILITIES h7{
+    font-size: 64px;
+    margin-top: 1%;
+    font-weight: bold;
+}
+.FACILITIES p{
+    font-size: 36px;
+    line-height: 50px;
+    color: #000000;
+}
+.FACILITIES-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-right: 2%;
+    margin-left: 2%;
+    text-align: left;
+    
+}
+.FACILITIES-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.FACILITIES-col{
+    padding: 0;
+}
+.FACILITIES-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+
+
+/*---------------FOOTER--------------*/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30PX 0;
+}
+.footer H6{
+    font-size: 30px;
+    margin-top:25PX ;
+    margin-bottom:25PX ;
+    font-weight: 600;
+}
+.footer p{
+    margin-top: 2%;
+}
+.icon .fa{
+    font-size: 30px;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+   /*------------------Sub-header------------*/
+   .Sub-header{
+    color: #000000;
+    height: 190vh;
+    width: 100%;
+   
+    text-align: center;
+}
+.Sub-header .nav-links ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 13px;
+    font-family: Arial;
+}
+.Sub-header h1{
+    text-align: left;
+    font-size: 63px;
+}
+.mescot-text{
+    margin-top: 20px;
+}
+.mescot img{
+    margin-top: 45px;
+    width: 300px;
+   height: 200px;
+   
+}
+.Sub-header h2{
+    font-size: 40px;
+    margin-top: 5%;
+    
+}
+h3{
+    margin-top: 5%;
+}
+.Sub-header p{
+    color: #000000;
+    font-size: 30px;
+    padding-top: 2%;
+   line-height: 50px;
+    text-align: center;
+}
+.footer .fa{
+    padding-bottom: 5px;
+}
+.Sub-header .row{
+    margin-top: 2%;
+}
+/*-----------------------team---------------------*/
+
+.team{
+    color: #ffffff;
+    height: 150vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/about\ us.webp);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+.nav-links ul li a{
+    color: rgb(239, 233, 233);
+    text-decoration: none;
+    font-size: 13px;
+    font-family: Arial;
+}
+.team h1{
+    margin-top: 3%;
+    margin-left: 10PX;
+    font-size: 80px;
+    
+   
+}
+
+.team img{
+    padding-top: 20%;
+    box-shadow:  rgba(0, 0, 0, 0.8);
+    filter: grayscale();
+    transition: 0.5s;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.team img:hover {
+    filter: none;
+
+}
+.layer1{
+    margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.image-col{
+    position: relative; 
+  margin: 20px;
+}
+ h3{
+    
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 24px;
+    text-align: center;
+    display: none; /* Hidden by default */
+    z-index: 10; /* Ensures the text is above other content */
+      
+ }
+ .image-col:hover h3 {
+    display: block;
+  }
+
+
+
+
+
+.footer .fa{
+    padding-bottom: 5px;
+}
+
+/*----------------------------JOIN AS-----------------------------------*/
+
+.joinAs{
+    color: #000000;
+    height:180vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/about\ us.webp);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    z-index: -1;
+    object-fit: cover;
+    display: block;
+    overflow: hidden;
+    
+
+}
+.joinAs h5 {
+    color: #fffcfc;
+    text-align: center;
+    font-size: 100px;
+    margin-top: 6%;
+}
+.joinAs a{
+    margin-top: 6%;
+}
+.join-btn{
+    height: 60px;
+    width: 200px;
+    text-align: center;
+    line-height: 60px; 
+    
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px ;
+    font-size: 32px;
+    position: relative;
+    cursor: pointer;
+    margin-right: 80px;
+    margin-left: 80px;
+    margin-bottom: 120px;
+    
+}
+.join-btn:hover{
+    border: 1px solid  orangered;
+    background: orangered;
+    transition: 1s;
+}
+
+.joinAs h6{
+    margin-top: 60px;
+}
+
+
+/*-------------------------match now-----------------------*/
+.CLIENT{
+    color: #000000;
+    height:auto;
+    width: 100%;
+   
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    z-index: -1;
+    object-fit: cover;
+    display: block;
+    overflow: hidden;
+    
+
+}
+.nav-links ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 13px;
+    font-family: Arial;
+}
+
+
+.CLIENT h5{
+    padding-top: 5%;
+    font-size: 64PX;
+    font-style: bold;
+}
+.CLIENT h6{
+    padding-top: 5%;
+    font-size: 40PX;
+    font-style: bold;
+    margin-bottom: 2%;
+}
+
+.form-container {
+   
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 1%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+.form-gender {
+    
+    align-items: left;
+    transform: scale(1.5px);
+    text-align: left;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+   
+
+}
+.form-gender label {
+    font-size: 35px;
+    font-weight: bold;
+    justify-content: flex-start;
+    text-align: left;
+    
+    margin-bottom: 8px;
+    
+}
+.radio-group1 {
+    position: relative;
+    align-items: left;
+}
+.radio-group2 {
+    position: relative;
+    
+}
+.radio-group3 {
+    position: relative;
+ 
+}
+
+input[type="radio"] {
+    
+   
+    margin-right: 2px;
+   
+}
+.form-support {
+
+    
+    text-align: left;
+    
+    
+    justify-content:flex-start;
+    margin-bottom: 15px;
+   
+
+}
+.form-container1 {
+    max-width: 1000px;
+    
+    margin: 0 auto;
+    margin-bottom: 1%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.form-support label {
+    align-items: left;
+    font-size: 35px;
+    font-weight: bold;
+    justify-content: flex-start;
+    text-align: left;
+    
+    margin-bottom: 8px;
+    
+}
+
+.checkbox-group {
+    position: relative;
+    
+}
+.checkbox-group input[type="checkbox"] {
+    
+    margin-right: 2px;
+}
+.form-container2 {
+    max-width: 1000px;
+    
+    margin: 0 auto;
+    margin-bottom: 1%;
+    padding:20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.form-container3 {
+    max-width: 1000px;
+    
+    margin: 0 auto;
+    margin-bottom: 1%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.form-container4 {
+    max-width: 1000px;
+    
+    margin: 0 auto;
+    margin-bottom: 1%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.form-container5 {
+    max-width: 1000px;
+    
+    margin: 0 auto;
+    margin-bottom: 1%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.form-container6 {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 1%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+
+
+
+button {
+    padding: 10px 20px;
+    margin-bottom: 2%;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-content: left;
+}
+button:hover {
+    background-color: #0056b3;
+}
+
+
+
+/*------------------------------client-form------------------*/
+
+.client-form{
+    width: 100%;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 1px;
+    
+}
+.client-form-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.client-form .nav-links ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 13px;
+    font-family: Arial;
+}
+.client-form h1{
+    text-align: center;
+    
+}
+.client-form-col{
+    justify-content: center;
+    flex-basis:45% ;
+    margin-bottom: 38px;
+    margin-top: 1%;
+}
+.client-form-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.client-form-col h10{
+    margin-right: 2%;
+}
+.client-form-col div .fa{
+    font-size: 28px;
+    color: orangered;
+    margin: 10px;
+    
+}
+.client-form-col div p{
+    padding: 0%;
+}
+.client-form-col div h11{
+    font-size: 20px;
+    margin-bottom: 5%;
+    color: #555;
+
+
+}
+.client-form-col input, .contact-col textarea{
+   
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    outline: none;
+    border: 1px solid orangered;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+}
+
+/*--------------exp for mail*/
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+input[type="email"] {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input[type="email"]:invalid {
+    border-color: red;
+}
+ /* Warning message styling */
+ .warning {
+    color: red;
+    font-size: 14px;
+    display: none; /* Hidden by default */
+    margin-top: 10px;
+}
+.client-form-col .hero-btn{
+    color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+/*--------------------------contact us-----------------------*/
+
+.contact{
+    width: 100%;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 1px;
+    
+}
+.contact .nav-links ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 13px;
+    font-family: Arial;
+}
+.contact h1{
+    text-align: center;
+    
+}
+.contact-col{
+    flex-basis:45% ;
+    margin-bottom: 38px;
+    margin-top: 1%;
+}
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-col h10{
+    margin-right: 2%;
+}
+.contact-col div .fa{
+    font-size: 28px;
+    color: orangered;
+    margin: 10px;
+    
+}
+.contact-col div p{
+    padding: 0%;
+}
+.contact-col div h11{
+    font-size: 20px;
+    margin-bottom: 5%;
+    color: #555;
+
+
+}
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    outline: none;
+    border: 1px solid orangered;
+
+}
+.contact-col .hero-btn{
+    color: #000000;
+}
+
+
+

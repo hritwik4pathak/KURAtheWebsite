@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta name="viewport" content="width=device-width , inetial-scale=1.0">
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+ <section class="contact">
+        <nav>
+           <a href="1index.html">KURA</a>
+           <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenue"></i>
+             <ul>
+                <li><a href="1index.html">HOME</a></li>
+                <li><a href="2about.html.html">ABOUT US</a></li>
+                <li><a href="3team.html.html">TEAM</a></li>
+                <li><a href="4joinAsA.html.html">GET STARTED</a></li>
+                <li><a href="5contact.html.html">CONTACT US</a></li> 
+                 </ul>
+             </div> 
+             <i class="fa fa-bars" onclick="showMenue" ></i>  
+        </nav>
+      <h1>CONTACT US NOW </h1>
+      
+    
+</section>
+
+<section class="contact">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+               <i class="fa fa-phone"  ></i> 
+               <span>
+                <h11>+91-8299241770</h11>
+                <p>monday to saturday,10am-9pm</p>
+               </span>
+            </div>
+        
+               <div>
+                  <i class="fa fa-envelope-o"  ></i> 
+                   <span>
+                    <h11>pratiksha.gupta13@gmail.com</h11>
+                    <p>Email us your query!</p>
+                 </span>
+                </div>
+           </div>
+           <div class="contact-col">
+            <form action="">
+                <input type="text" placeholder="Enter your name" required>
+                <input type="email" placeholder="Enter Email address" required>
+                <input type="text" placeholder="Enter your subject" required>
+                <textarea rows="8" placeholder="message"></textarea>
+                <button type="submit" class="hero-btn">Send message</button>
+            </form>
+           </div>
+            
+    </div>
+
+</section>
+
+
+
+
+<!-----------------------------footer---------------------------->
+
+<section class="footer">
+    <h6>TO KNOW MORE</h6>
+    <p>FOLLOW US ON !!
+    </p>
+    <div class="icon">
+        <i class="fa fa-facebook"  ></i>  
+        <i class="fa fa-twitter"  ></i>  
+        <i class="fa fa-instagram"  ></i>  
+        <i class="fa fa-linkedin"  ></i>  
+         
+    </div>
+
+</section>
+
+
+
+
+
+
+<!--------------javascript for taogle menue------------------>
+
+    <script>
+        var navLinks= document.getElementById("navLinks");
+
+        function showMenue(){
+            navLinks.style.right = "200px";
+        }
+        function hideMenue(){
+            navLinks.style.right = "00px";
+        }
+
+
+
+
+
+    </script>
+      
+</body>
+</html>

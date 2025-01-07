@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta name="viewport" content="width=device-width , inetial-scale=1.0">
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="Sub-header">
+        <nav>
+           <a href="1index.html">KURA</a>
+           <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenue"></i>
+             <ul>
+                    <li><a href="1index.html">HOME</a></li>
+                    <li><a href="2about.html.html">ABOUT US</a></li>
+                    <li><a href="3team.html.html">TEAM</a></li>
+                    <li><a href="4joinAsA.html.html">GET STARTED</a></li>
+                    <li><a href="5contact.html.html">CONTACT US</a></li> 
+                 </ul>
+             </div> 
+             <i class="fa fa-bars" onclick="showMenue" ></i>  
+        </nav>
+        <div class="row">
+            <div class="mescot-text">
+                <h1>WE ARE  </h1>
+             <h4>KURA</h4>
+             </div>
+              <div class="mescot">
+                <img src="images/kura-mescot.jpeg" >
+          </div>
+        </div>
+    <p>At KURA, our mission is simple: to make mental health support accessible, personalized, and effective for everyone. We understand that mental health is deeply personal, and finding the right  therapist can be challenging. That's why  we’ve created a platform that connects individuals with the therapists who are best suited to meet their unique needs.</p>
+    <h2>WHY CHOOSE KURA ?</h2>
+    
+    <div class="row">
+        <div class="service-col">
+            
+            <p> Tailored Matching: Find a therapist who truly understands your unique needs.</p>
+        </div>
+        <div class="service-col">
+            
+            <p> Easy to Use: A simple and intuitive platform for seamless therapy access. </p>
+        </div>
+        <div class="service-col">
+           
+            <p>Quality Care: We are committed to providing top-notch mental health services</p>
+        </div>
+    </div>
+
+ <div class="footer">
+    <h6>TO KNOW MORE</h6>
+    <p>FOLLOW US ON !!
+    </p>
+    <div class="icon">
+        <i class="fa fa-facebook"  ></i>  
+        <i class="fa fa-twitter"  ></i>  
+        <i class="fa fa-instagram"  ></i>  
+        <i class="fa fa-linkedin"  ></i>  
+         
+    </div>
+ </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<!--------------javascript for taogle menue------------------>
+
+    <script>
+        var navLinks= document.getElementById("navLinks");
+
+        function showMenue(){
+            navLinks.style.right = "200px";
+        }
+        function hideMenue(){
+            navLinks.style.right = "00px";
+        }
+
+
+
+
+
+    </script>
+      
+</body>
+</html>

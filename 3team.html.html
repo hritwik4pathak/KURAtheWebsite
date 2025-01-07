@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta name="viewport" content="width=device-width , inetial-scale=1.0">
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="team">
+        <nav>
+           <a href="1index.html">KURA</a>
+           <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenue"></i>
+             <ul>
+                <li><a href="1index.html">HOME</a></li>
+                <li><a href="2about.html.html">ABOUT US</a></li>
+                <li><a href="3team.html.html">TEAM</a></li>
+                <li><a href="4joinAsA.html.html">GET STARTED</a></li>
+                <li><a href="5contact.html.html">CONTACT US</a></li> 
+                 </ul>
+             </div> 
+             <i class="fa fa-bars" onclick="showMenue" ></i>  
+        </nav>
+      <h1>OUR TEAM</h1>
+      
+    <div  class="row">
+        <div class="image-col">
+            <img src="images/founder1.jpeg">
+            <div class="layer1">
+                <h3>⁠Strategy and Operations</h3>
+            </div>
+        </div>
+   
+        <div class="image-col">
+            <img src="images/founder2.jpeg">
+            <div class="layer1">
+                <h3>Chief Psychologist</h3>
+            </div>
+        </div>
+        
+        <div class="image-col">
+            <img src="images/founder3.jpeg">
+            <div class="layer1">
+                <h3>Marketing Head</h3>
+            </div>
+        </div>
+        
+    </div>
+
+ <div class="footer">
+    <h6>TO KNOW MORE</h6>
+    <p>FOLLOW US ON !!
+    </p>
+    <div class="icon">
+        <i class="fa fa-facebook"  ></i>  
+        <i class="fa fa-twitter"  ></i>  
+        <i class="fa fa-instagram"  ></i>  
+        <i class="fa fa-linkedin"  ></i>  
+         
+    </div>
+ </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+<!--------------javascript for taogle menue------------------>
+
+    <script>
+        var navLinks= document.getElementById("navLinks");
+
+        function showMenue(){
+            navLinks.style.right = "200px";
+        }
+        function hideMenue(){
+            navLinks.style.right = "00px";
+        }
+
+
+
+
+
+    </script>
+      
+</body>
+</html>
